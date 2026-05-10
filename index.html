@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Detective</title>
 
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<div class="scan"></div>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h1>AI DETECTIVE</h1>
+
+<input id="search" placeholder="Search target...">
+
+<button onclick="analyze()">ANALYZE</button>
+
+<div class="status">
+<div>STATUS: <span id="status">IDLE</span></div>
+<div>THREAT: <span id="threat">LOW</span></div>
+<div>AI CONFIDENCE: <span id="confidence">0%</span></div>
+</div>
+
+<div class="terminal" id="terminal"></div>
+
+<div class="timeline">
+<h3>TIMELINE</h3>
+<ul id="timeline"></ul>
+</div>
+
+</div>
+
+<div id="map"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
